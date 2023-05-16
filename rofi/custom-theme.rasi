@@ -1,0 +1,98 @@
+
+ * {
+    orange:         #F0C674;
+    background-color:   transparent;
+    black:              #3d352a;
+    tlightblack:        #554444cc;
+    white:              #CCCCCC;
+    blue:               #87afff;
+    aqua:               #A0F2DD;
+    pink:               #F2ACB9;
+    orpink:             #F9B9A5;
+
+    
+    //
+    // Bold, Italic, Underline
+    highlight:          bold #87afff;
+
+    transparent: rgba(0,0,0,0);
+    font: "Liga SFMono Nerd 16";
+}
+window {
+    location: center;
+    anchor:   center;
+    transparency: "screenshot";
+    padding: 10px;
+    border:  0px;
+    border-radius: 10px;
+    color: @pink;
+    background-color: @transparent;
+    spacing: 0;
+    children:  [mainbox];
+    orientation: horizontal;
+}
+mainbox {
+    spacing: 0;
+    children: [ inputbar, message, listview ];
+}
+message {
+    border-color: @orange;
+    border:  0px 2px 2px 2px;
+    border-radius: 10px;
+    padding: 5;
+    background-color: @orange;
+    font: "Liga SFMono Nerd 8";
+    color: @black;
+}
+
+inputbar {
+    color: @orpink;
+    padding: 10px;
+    background-color: @tlightblack;
+    border: 2px 2px 2px 2px;
+    border-radius:  15px 15px 0px 0px;
+    border-color: @orange;
+    font: "Liga SFMono Nerd 16";
+}
+entry,prompt,case-indicator {
+    text-font: inherit;
+    text-color:inherit;
+}
+prompt {
+    margin:     0px 0.3em 0em 0em ;
+}
+listview {
+    padding: 8px;
+    border-radius: 0px 0px 15px 15px;
+    border-color: @orange;
+    border: 0px 2px 2px 2px;
+    background-color: @tlightblack;
+    dynamic: false;
+    lines: 10;
+}
+element {
+    padding: 2px;
+    vertical-align: 0.5;
+    border: 0px;
+    border-radius: 10px;
+    background-color: @transparent;
+    color: @white;
+    font:inherit;
+}
+element-text {
+    background-color: inherit;
+    text-color:       inherit;
+}
+
+element selected.normal {
+    color: @pink;
+   //background-color: @tlightblack;
+}
+
+error-message {
+    expand: true;
+    background-color: red;
+    border-color: darkred;
+    border: 2px;
+    padding: 1em;
+}
