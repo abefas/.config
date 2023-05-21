@@ -1,0 +1,43 @@
+! special
+!*.foreground:   #c5c8c6
+!*.background:   #1d1f21
+*.cursorColor:  #c5c8c6
+
+! hard contrast: *background: #1d2021
+!*.background: #282828
+! soft contrast:
+*.background: #32302f
+*.foreground: #ebdbb2
+! Black + DarkGrey
+*.color0:  #282828
+*.color8:  #928374
+! DarkRed + Red
+*.color1:  #cc241d
+*.color9:  #fb4934
+! DarkGreen + Green
+*.color2:  #98971a
+*.color10: #b8bb26
+! DarkYellow + Yellow
+*.color3:  #d79921
+*.color11: #fabd2f
+! DarkCyan + Cyan
+*.color4:  #689d6a
+*.color12: #53a835
+! DarkMagenta + Magenta
+*.color5:  #b16286
+*.color13: #d3869b
+! DarkBlue + Blue
+*.color6:  #458588
+*.color14: #0094be
+! LightGrey + White
+*.color7:  #a89984
+*.color15: #ebdbb2
+
+
+URxvt*inheritPixmap: true
+URxvt*transparent: true
+URxvt*shading: 20
+
+URxvt.scrollBar: false
+URxvt*font:xft:Liga SFMono Nerd Font:style=Regular:size=14
+URxvt.letterSpace:0
