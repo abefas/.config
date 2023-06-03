@@ -39,5 +39,8 @@ URxvt*transparent: true
 URxvt*shading: 20
 
 URxvt.scrollBar: false
-URxvt*font:xft:Liga SFMono Nerd Font:style=Regular:size=14
+URxvt*font:xft:Liga SFMono Nerd Font:style=Regular:size=15
 URxvt.letterSpace:0
+
+Xcursor.theme: capitaine-cursors-white
+Xcursor.size: 32

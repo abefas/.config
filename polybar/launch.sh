@@ -4,13 +4,11 @@ killall -q polybar
 
 while pgrep -u $UID -x polybar >/dev/null; do sleep 1; done
 
-polybar myBar1 &
-polybar myBar2 &
+polybar primaryMonitor1 &
+polybar primaryMonitor2 &
 
-if [[ $(xrandr -q | grep 'HDMI2 connected') ]]; then
-    polybar myExternalBar1 &
-    polybar myExternalBar2 &
-fi
+polybar rightMonitor1 &
+polybar rightMonitor2 &
 
 echo "Bars launched..."
 

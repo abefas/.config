@@ -1,5 +1,5 @@
-#!/bin/sh
-
+#!/usr/bin/env bash
+#
 get_icon() {
     case $1 in
         # Icons for weather-icons
@@ -52,7 +52,7 @@ get_duration() {
 
 }
 
-KEY="e997f6ea2a4219ca6bd383cfbae25069"
+KEY="ee91832c11847f61a76299245a1f479d"
 CITY="735736"
 UNITS="metric"
 SYMBOL="°"
@@ -111,4 +111,3 @@ if [ -n "$current" ] && [ -n "$forecast" ]; then
 
     echo "$(get_icon "$current_icon") $current_temp$SYMBOL  $trend  $(get_icon "$forecast_icon") $forecast_temp$SYMBOL   $daytime"
 fi
-
