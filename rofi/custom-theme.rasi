@@ -1,16 +1,18 @@
 
  * {
-    orange:         #F0C674;
+    orange:             #F0C674;
     background-color:   transparent;
-    black:              #3d352a;
-    tlightblack:        #554444cc;
+    black:              #1e1e1e;
+    tlightblack:        #121212BF;
     white:              #CCCCCC;
     blue:               #87afff;
-    aqua:               #A0F2DD;
-    pink:               #F2ACB9;
-    orpink:             #F9B9A5;
 
-    
+    silverlakeblue:     #6786C6;
+    deeppeach:          #F5BBA1;
+    milk:               #F8FBF2;
+    navajowhite:        #FFE0A8; 
+
+
     //
     // Bold, Italic, Underline
     highlight:          bold #87afff;
@@ -22,11 +24,11 @@ window {
     location: center;
     anchor:   center;
     transparency: "screenshot";
-    padding: 10px;
+    padding: 0px;
     border:  0px;
     border-radius: 10px;
-    color: @pink;
-    background-color: @transparent;
+    color: @silverlakeblue;
+    background-color: @black;
     spacing: 0;
     children:  [mainbox];
     orientation: horizontal;
@@ -36,7 +38,7 @@ mainbox {
     children: [ inputbar, message, listview ];
 }
 message {
-    border-color: @orange;
+    border-color: @navajowhite;
     border:  0px 2px 2px 2px;
     border-radius: 10px;
     padding: 5;
@@ -46,12 +48,12 @@ message {
 }
 
 inputbar {
-    color: @orpink;
+    color: @milk;
     padding: 10px;
-    background-color: @tlightblack;
+    background-color: @black;
     border: 2px 2px 2px 2px;
-    border-radius:  15px 15px 0px 0px;
-    border-color: @orange;
+    border-radius:  10px 10px 0px 0px;
+    border-color: @navajowhite;
     font: "Liga SFMono Nerd 16";
 }
 entry,prompt,case-indicator {
@@ -63,10 +65,10 @@ prompt {
 }
 listview {
     padding: 8px;
-    border-radius: 0px 0px 15px 15px;
+    border-radius: 0px 0px 10px 10px;
     border-color: @orange;
     border: 0px 2px 2px 2px;
-    background-color: @tlightblack;
+    background-color: @black;
     dynamic: false;
     lines: 10;
 }
@@ -76,7 +78,7 @@ element {
     border: 0px;
     border-radius: 10px;
     background-color: @transparent;
-    color: @white;
+    color: @milk;
     font:inherit;
 }
 element-text {
@@ -85,7 +87,7 @@ element-text {
 }
 
 element selected.normal {
-    color: @pink;
+    color: @silverlakeblue;
    //background-color: @tlightblack;
 }
 

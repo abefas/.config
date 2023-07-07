@@ -30,4 +30,3 @@ export PS1;
 
 #Run neofetch at startup
 neofetch
-. "$HOME/.cargo/env"

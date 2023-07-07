@@ -1,9 +1,5 @@
 [[ -f ~/.bashrc ]] && . ~/.bashrc
 
-export EDITOR="vim"
+export EDITOR="neovim"
 export TERMINAL="urxvt"
 export BROWSER="firefox"
-
-if [[ "$(tty)" = "/dev/tty1" ]]; then
-	pgrep bspwm || startx
-fi

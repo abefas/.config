@@ -36,10 +36,10 @@
 
 URxvt*inheritPixmap: true
 URxvt*transparent: true
-URxvt*shading: 20
+URxvt*shading: 11
 
 URxvt.scrollBar: false
-URxvt*font:xft:Liga SFMono Nerd Font:style=Regular:size=15
+URxvt*font:xft:Liga SFMono Nerd Font:style=Regular:size=14
 URxvt.letterSpace:0
 
 Xcursor.theme: capitaine-cursors-white

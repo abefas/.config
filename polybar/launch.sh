@@ -10,6 +10,7 @@ polybar primaryMonitor2 &
 polybar rightMonitor1 &
 polybar rightMonitor2 &
 
+
 echo "Bars launched..."
 
 

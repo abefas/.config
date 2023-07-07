@@ -18,6 +18,18 @@ super + Escape
 XF86MonBrightness{Up,Down}
 	xbacklight {-inc,-dec} 10
 
+# Play-Pause 
+XF86AudioPlay
+    /usr/bin/playerctl play-pause
+
+# Stop all
+XF86AudioStop
+    /usr/bin/playerctl --all-players stop
+
+# Next - Previous song 
+XF86Audio{Next,Prev}
+    /usr/bin/playerctl {next,previous}
+
 # Volume
 XF86AudioLowerVolume
 #amixer -q sset Master,0 {'1dB-','1dB+'}
