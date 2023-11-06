@@ -30,4 +30,7 @@ vim.opt.updatetime = 50
 
 vim.opt.colorcolumn = "100"
 
-vim.g.mapleader = " "
+vim.opt.laststatus = 3
+vim.opt.statusline = " %f %m %= %l:%c  "
+
+vim.opt.pumheight = 5

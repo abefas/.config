@@ -1,1 +1,2 @@
-require("abefas")
+require("core")
+require("core.lazy")
